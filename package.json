@@ -6,7 +6,8 @@
   "author": "richarda2b",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --config=./config/webpack/webpack-config.js"
+    "build": "webpack --config=./config/webpack/webpack-config.js",
+    "dev": "webpack-dev-server --inline --hot --config config/webpack/webpack-config.js --content-base public/"
   },
   "dependencies": {
     "react": "^15.5.4",
@@ -17,6 +18,7 @@
     "babel-loader": "^7.0.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "webpack": "^2.5.1"
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5"
   }
 }
