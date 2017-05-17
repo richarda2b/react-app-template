@@ -1,4 +1,5 @@
 const jsRules = module.require('./rules/javascript');
+const cssRules = module.require('./rules/css');
 const paths = module.require('./paths');
 const webpack = require('webpack');
 
@@ -15,7 +16,8 @@ module.exports = {
   },
   module: {
     rules: [
-      jsRules
+      jsRules,
+      cssRules
     ]
   }
 }
