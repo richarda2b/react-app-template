@@ -1,0 +1,23 @@
+.header {
+  height: 20px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 2px;
+  background: #434A54;
+}
+
+.header > a {
+  font-family: helvetica;
+  text-decoration: none;
+  text-align: center;
+  color: #f0f0f0;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+  width: 100%;
+  max-width: 100px;
+}
+
+.header > a:hover {
+  background-color: #656D78;
+}
+
