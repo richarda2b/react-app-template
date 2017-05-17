@@ -1,0 +1,8 @@
+{
+  "name": "react-app",
+  "version": "0.0.1",
+  "description": "Minimal React app",
+  "main": "index.js",
+  "author": "richarda2b",
+  "license": "MIT"
+}
