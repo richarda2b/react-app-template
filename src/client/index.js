@@ -5,16 +5,23 @@ import App from '../pages/app';
 import AboutUs from '../pages/about';
 import ContactUs from '../pages/contact-us';
 import Header from '../components/header';
+import reducers from '../reducers';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+
+const store = createStore(reducers);
 
 const application = (
-  <Router>
-    <div>
-      <Header />
-      <Route exact path="/" component={App} />
-      <Route path="/about" component={AboutUs} />
-      <Route path="/contact" component={ContactUs} />
-    </div>
-  </Router>
+  <Provider store={store}>
+    <Router>
+      <div>
+        <Header />
+        <Route exact path="/" component={App} />
+        <Route path="/about" component={AboutUs} />
+        <Route path="/contact" component={ContactUs} />
+      </div>
+    </Router>
+  </Provider>
 )
 
 reactDom.render(
